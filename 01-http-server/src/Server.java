@@ -44,7 +44,7 @@ public class Server {
         String[] requestLine = requestLines.getFirst().split(" ");
         String path = requestLine[1];
 
-        Path filePath = Paths.get(".",path);
+        Path filePath = Paths.get("src",path);
 
         if (dynamic_path.equals(path)) {
             sendResponse(
